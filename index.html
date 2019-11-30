@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Online Store</title>
+	<!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!-- Latest compiled and minified CSS -->
+	<script src="https://use.fontawesome.com/5f0fc0cc0f.js"></script>
+</head>
+<body>
+   <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Ux/Design</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="game.html">Game Page</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="payment.html">Payments</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Brands</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-gallery">Categories</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+					</li>
+					<form class="navbar-form navbar-right">
+							<div class="form-group">
+							  <input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+					</form>	
+				</ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+	</nav>
+    <div class="banner">
+			<img src="images/banner.jpg" alt="">  
+			<div class="banner-container">         
+					<h2 class="inner-heading">Welcome To My Store</h2>
+					<p class="sub-heading">New Computers For Sale</p>
+					<a href="#" class="btn btn-primary">More Info</a>
+		    </div>
+	</div>
+	<section id="content">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h2>Check Our New Specials</h2>	
+							<hr>
+						</div>
+					</div>
+				</div>
+				<div class="container">		
+					<div class="row">
+						<div class="col-sm-6">
+							<h3>For Sale Specials</h3>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Modi facere explicabo soluta incidunt ab eligendi quo 
+								laborum hic corrupti vero ratione fugiat aspernatur, 
+								sequi qui in labore! Debitis, accusamus architecto.</p>
+						</div>	
+					    <div class="col-sm-6">
+							<!--carousel-area-->
+							<article class="carousel">
+								<div class="container" id="outside-container">
+									<div class="inner">
+										<img src="images/1.png" class="img-responsive slideshow">
+										<img src="images/2.png" class="img-responsive slideshow">
+										<img src="images/3.jpg" class="img-responsive slideshow">
+									</div>
+								</div>
+							</article>
+						</div>	
+					</div>		
+				</div>
+				<script>
+				var myIndex = 0;
+				carousel();
+				
+				function carousel(){
+					var i;
+					var x= document.getElementsByClassName("slideshow");
+					for(var i= 0; i<x.length; i++){
+					x[i].style.display ="none"
+					}
+					myIndex++;
+					if(myIndex > x.length){myIndex = 1}
+					x[myIndex-1].style.display="block";
+					setTimeout(carousel, 3000);
+				
+				}
+
+				</script>
+				<!--Ecommerce_content-->
+	</section>
+	<section id="deals">
+        <div class="container">
+			<div class="row">
+				<div class="col lg-12">
+                    <h2>Cyber Deals!!</h2>
+				</div>	
+			</div>
+			<div class="row text-center">
+                <div class="col-sm-3 inner-deals">
+					<img src="images/1.png" alt="">
+					<h3>Tech</h3>
+				</div>
+				<div class="col-sm-3 inner-deals">
+					<img src="images/2.png" alt="">
+					<h3>Games</h3>
+				</div>
+				<div class="col-sm-3 inner-deals">
+					<img src="images/3.jpg" alt="">
+					<h3>Electronics</h3>
+				</div>
+				<div class="col-sm-3 inner-deals">
+					<img src="images/4.jpg" alt="">
+					<h3>Repair Kits</h3>
+				</div>
+			 </div>
+		</div>
+	</section>
+	<section id="Ecommerce_Content">
+	    <div class="container">
+	        <div class="row">
+			    <div class="col-md-12">
+					    <!--side-bar-area-->
+						    <div class="col-md-4 col-sm-4">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">
+                                        Categories
+                                    </a>
+                                    <a href="#" class="list-group-item">Laptops<span class="badge">14</span></a>
+                                    <a href="#" class="list-group-item">Cameras</a>
+                                    <a href="#" class="list-group-item">Computers<span class="badge">2</span></a>
+                                    <a href="#" class="list-group-item">Iphones</a>
+                                </div> 
+								<div class="list-group">
+                                    <a href="#" class="list-group-item active">
+                                        Brands
+                                    </a>
+                                    <a href="#" class="list-group-item">Hp<span class="badge">11</span></a>
+                                    <a href="#" class="list-group-item">Dell</a>
+                                    <a href="#" class="list-group-item">Sony</a>
+                                    <a href="#" class="list-group-item">Toshiba</a>
+                                </div> 
+                            </div>
+						    <div class="col-md-8 col-sm-8">
+						        <div class="col-md-4 col-sm-4">
+									<img src="images/10.jpg" class="sc-item-img img-responsive"/>
+										<div class="text-center"><a href="#">Apple Laptop</a></div>
+									    <p class="text-center">$999.99</p>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<img src="images/11.jpg" class="sc-item-img img-responsive"/>
+									<div class="text-center"><a href="#">apple Tablets</a></div>
+									<p class="text-center">$699.99</p>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<img src="images/12.jpg" class="sc-item-img img-responsive"/>
+									<div class="text-center"><a href="#">Iphones</a></div>
+								    <p class="text-center">$599.99</p>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<img src="images/13.jpg" class="sc-item-img img-responsive"/>
+									<div class="text-center"><a href="#">Apple Desktops</a></div>
+									<p class="text-center">$999.00</p>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<img src="images/14.jpg" class="sc-item-img img-responsive"/>
+									<div class="text-center"><a href="#">Apple Watch</a></div>
+									<p class="text-center">$290.00</p>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<img src="images/15.jpg" class="sc-item-img img-responsive"/>
+									<div class="text-center"><a href="#">Apple Credit Machine</a></div>
+									<p class="text-center">$290.00</p>
+								</div>
+							</div>
+							<!--col-md-8--> 
+						</div>
+				</div>
+			</div>
+	</Section>
+	<section id="deals">
+			<div class="container">
+				<div class="row">
+					<div class="col lg-12">
+						<h2>More Cyber Deals!!</h2>
+					</div>	
+				</div>
+				<div class="row text-center">
+					<div class="col-sm-3 inner-deals">
+						<img src="images/5.jpg" alt="">
+						<h3>Tech</h3>
+					</div>
+					<div class="col-sm-3 inner-deals">
+						<img src="images/6.jpg" alt="">
+						<h3>Games</h3>
+					</div>
+					<div class="col-sm-3 inner-deals">
+						<img src="images/7.jpg" alt="">
+						<h3>Electronics</h3>
+					</div>
+					<div class="col-sm-3 inner-deals">
+						<img src="images/8.JPG" alt="">
+						<h3>Repair Kits</h3>
+					</div>
+				 </div>
+			</div>
+		</section>
+	<section id="products">	
+		<div class="container">		
+				<div class="row">
+	                    <div class="col-md-12">
+							<h2>Our Products</h2>
+							<hr>
+	                    </div>
+	            </div> 
+	            <div class="row main-box">
+					    <div class="col-sm-4 box">
+	                        <h2>Ecommerce</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum</p>
+						    <a href="#" class="btn btn-primary">More Info</a>
+						</div>
+	                    <div class="col-sm-4 box">
+	                        <h2>Products</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum</p>
+						    <a href="#" class="btn btn-primary">More Info</a>
+						</div>
+						<div class="col-sm-4 box">
+							<h2 id="logo">Brands</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum</p>
+						    <a href="#" class="btn btn-primary">More Info</a>
+						</div>
+	            </div>   
+	    </div>
+	</section>
+	<section id="select">
+        <div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>Select Your Item</h2>
+                    <hr>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+					<a class="btn btn-primary" onclick="setEven()">Even</a>
+					<a class="btn btn-primary" onclick="setOdd()">Odd</a>
+					<a class="btn btn-primary" onclick="setFirst4()">First 4</a>
+					<p class="label">Electronics</p>
+                     <ul id="items">
+                         <li>Tele</li>
+                         <li>Computer</li>
+                         <li>Iphone</li>
+                         <li>Ps2</li>
+                         <li>Xbox</li>
+                         <li>Laptop</li>
+                         <li>Movies</li>
+                         <li>Games</li>
+					 </ul>
+				</div>
+				<div class="col-md-6 col-sm-6">
+                     <div class="widget">
+                          <div class="time">
+                              <p id="week" class="week"></p>
+                              <p id="month" class="month"></p>
+                              <p>-</p>
+                              <p id="day" class="day"></p>
+							  <p>of</p>
+							  <p id="year" class="year"></p>
+                          </div>
+                          <div class="clock">
+                              <p id="hour" class="hour"></p>
+                              <p>:</p>
+                              <p id="minutes" class="minutes"></p>
+                              <p>:</p>
+                              <div class="seconds-box">
+                                   <p id="ampm" class="ampm"></p>
+                                   <p id="seconds" class="seconds"></p>
+							  </div>
+						  </div>
+					 </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="specials">
+	    <div class="container">
+	        <div class="row">
+	            <h2>Specials</h2>
+				<hr>
+	        </div>
+	        <div class="row text-center">
+	            <div class="col-md-3 col-sm-3">
+				    <img src="images/10.jpg" class="img-responsive products" id="image">
+					<h4>Free shipping</h4>
+					<button class="btn btn-md">Shop Now</button>
+			    </div>
+                <div class="col-md-3 col-sm-3">			
+				    <img src="images/11.jpg" class="img-responsive products">
+					<h4>Free Shipping</h4>
+					<button class="btn btn-md">Shop Now</button>
+	            </div> 
+			    <div class="col-md-3 col-sm-3">			
+				    <img src="images/12.jpg" class="img-responsive products">
+					<h4>Free Shipping</h4>
+					<button class="btn btn-md">Shop Now</button>
+	            </div>
+			    <div class="col-md-3 col-sm-3">			
+				    <img src="images/13.jpg" class="img-responsive products">
+					<h4>Free Shipping</h4>
+					<button class="btn btn-md">Shop Now</button>
+	            </div> 
+				<div class="col-md-3 col-sm-3">			
+				    <img src="images/14.jpg" class="img-responsive products">
+					<h4>Free Shipping</h4>
+					<button class="btn btn-md">Shop Now</button>
+	            </div>
+				<div class="col-md-3 col-sm-3">
+				    <img src="images/15.jpg" class="img-responsive products">
+					<h4>Free Shipping</h4>
+					<button class="btn btn-md">Shop Now</button>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <img src="images/15.jpg" class="img-responsive products">
+					<h4>Free Shipping</h4>
+					<button class="btn btn-md">Shop Now</button>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <img src="images/16.jpg" class="img-responsive products">
+					<h4>Free Shipping</h4>
+					<button class="btn btn-md">Shop Now</button>
+				</div>
+	        </div>
+	    </div>
+	</section>
+    <section class="cta">
+	         <div class="cta-content">
+	              <div class="container">
+	                   <h2>Free Shipping With Your Order<br>Start Today</p>
+					   <a href="#" class="btn btn-primary">Lets Get Started</a>
+	              </div>
+             </div>	
+	</section>
+    <section id="contact" class="contact">
+	    <div class="container">
+	        <div class="row">
+	            <h2>Contact-Us</h2>
+				<hr>
+	        </div>
+	        <div class="row">
+			    <form id="form-area">
+			        <div class="form-group">
+			            <label form="name">Name</label>
+						<input type="name" placeholder="Name" class="form-control">
+	                </div> 
+	                <div class="form-group">
+					    <label>Email</label>
+	                    <input type="email" placeholder="Email" class="form-control">
+					</div>
+					<div class="form-group">
+					    <label>Email</label>
+						<textarea name="message" class="form-control" rows="5"></textarea>
+					</div>
+	
+				</form> 
+				<a href="#" class="btn btn-primary">Send Message</a>
+	        </div>
+	    </div>
+	</section>
+	<section id="social-contact" class="contact-area">
+	        <div class="container">
+	             <h2>We<i class="fa fa-heart"></i>New Friends!</h2>    
+	                 <ul class="list-inline list-social">
+	                    <li class="social-twitter">
+						    <a href="#"><i class="fa fa-twitter"></i></a>
+						</li>
+	                    <li class="social-facebook">
+						    <a href="#"><i class="fa fa-facebook"></i></a>
+						</li>
+	                    <li class="social-google-plus">
+						   <a href="#"><i class="fa fa-google-plus"></i></a>
+						</li>
+	                 </ul>
+            </div>
+	</section>
+	<footer>
+	       <div class="container">
+	            <p>Copyright &copy; UxDesign 2016.<br>
+				All Rights Reserved.</p>
+	            <ul class="list-inline">
+	                <li>
+					    <a href="#">Privacy</a>
+	                </li>
+	                <li>
+	                    <a href="#">Terms</a>
+	                </li>
+					<li>
+					    <a href="#">FAQ</a>
+	                </li>
+	            </ul>
+	       </div>
+	</footer>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/tellTime.js"></script>
+<script src="js/selectors.js"></script>
+</body>
+</html>
