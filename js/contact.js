@@ -82,9 +82,6 @@ document.querySelector('#form-area').addEventListener('submit', (e) => {
      //Add Message to UI
      UI.addMessageToList(mymessage);
 
-
-     UI.deleteMessage(mymessage);
-
      // Clear fields
      UI.clearFields();
      }
