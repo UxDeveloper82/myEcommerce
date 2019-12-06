@@ -46,11 +46,17 @@ class UI {
         list.appendChild(row);
     }
 
-  static clearFields() {
-      document.querySelector('#name').value = '';
-      document.querySelector('#email').value = '';
-      document.querySelector('#message').value = '';
-  }
+    static deleteMessage(el) {
+        if(el.classList.contains('delete')) {
+            el.parentElement.parentElement.remove();
+        }
+    }
+
+    static clearFields() {
+        document.querySelector('#name').value = '';
+        document.querySelector('#email').value = '';
+        document.querySelector('#message').value = '';
+    }
 }
 
 
@@ -64,13 +70,33 @@ document.querySelector('#form-area').addEventListener('submit', (e) => {
      const email = document.querySelector('#email').value;
      const message = document.querySelector('#message').value;
 
+     //Validate 
+     if (name === '' || email === '' || message === '')
+     {
+        alert('Please fill in all fields');
+     } else {
+    
+      // Instatiate Message  
      const mymessage = new Message(name,email,message);
-     console.log(mymessage);
 
+     //Add Message to UI
+     UI.addMessageToList(mymessage);
+
+
+     UI.deleteMessage(mymessage);
+
+     // Clear fields
      UI.clearFields();
+     }
      
 });
 
 document.addEventListener('DOMContentLoaded', UI.displayMessages);
 
 
+// Event: Remove a book 
+document.querySelector("#message-list").addEventListener('click', (e) => {
+  
+    // Remove Message from UI
+    UI.deleteMessage(e.target)
+});
