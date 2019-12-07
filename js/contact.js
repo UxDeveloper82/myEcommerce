@@ -52,6 +52,19 @@ class UI {
         }
     }
 
+     static showAlert(message, className) {
+         const div = document.createElement('div');
+         div.className = `alert alert-${className}`;
+         div.appendChild(document.createTextNode(message));
+         const row = document.querySelector('.row-form');
+         const form = document.querySelector('#form-area');
+         row.insertBefore(div, form);
+         console.log(form);
+         //vanish in 3 seconds
+         setTimeout(() => document.querySelector('.alert').remove(),3000);
+     }
+
+
     static clearFields() {
         document.querySelector('#name').value = '';
         document.querySelector('#email').value = '';
@@ -81,10 +94,14 @@ document.querySelector('#form-area').addEventListener('submit', (e) => {
 
      //Add Message to UI
      UI.addMessageToList(mymessage);
+     
+      // Show success message
+      UI.showAlert('Message Send', 'success');
 
      // Clear fields
      UI.clearFields();
      }
+    
      
 });
 
@@ -96,4 +113,7 @@ document.querySelector("#message-list").addEventListener('click', (e) => {
   
     // Remove Message from UI
     UI.deleteMessage(e.target)
+
+    //show success message
+    UI.showAlert('Message Removed', 'success');
 });
