@@ -118,6 +118,11 @@ section{
 /*=================
    Specials-area
 ==================*/
+.products-header{
+  color:red;
+  text-transform: uppercase;
+}
+
 #specials .products{
 	box-shadow:0 0 10px #252525;
 }
