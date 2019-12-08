@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <meta charset="utf-8">
     <title>e-commerce Payment</title>
+    <link rel="stylesheet" href="css/estyle.css">
 </head>
 <body>
     <div id="box">
@@ -22,58 +24,43 @@
             <span>Billing Info</span>
                 <div id="billinfo">
                     <input type="checkbox" id="cbSame"/>
-                       <label for="cbSame">Same As Shipping</label>
+                       <label for="cbSame">Same As Shipping</label><br>
                     <label for="headLabel">Name on Card</label>
-                    
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                </div>       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <input type="text" id="nameB" /><br>
+                    <label class="headLabel">Address</label>
+                    <input type="text" id="addrB"/><br>
+                    <label class="headLabel">City</label>
+                    <input type="text" id="cityB"/>
+                    <label>State</label>
+                    <select class="state" id="stateB"></select>
+                    <label>Zip</label><input type="text" id="zipB"/><br>
+                    <input type="radio" name="ptype" id="visa"/>
+                    <label for="visa"><img src="/images/visa.png"/></label>
+                    <input type="radio" name="ptype" id="mc"/>
+                        <label for="mc"><img src="/images/mc.png"/></label>
+                    <input type="radio" name="ptype" id="amex"/>
+                        <label for="amex"><img src="/images/amex.png"/></label>
+                    <input type="radio" name="ptype" id="ppal"/>
+                        <label for="ppal"><img src="/images/ppal.png"/></label>
+                    <br>
+                    <div id="ccinfo">
+                        <label class="headLabel">Card Number</label>
+                        <input type="text" id="cardNum"/>
+                        <input type="password" id="csc"/>
+                        <label>csc</label><br>             
+                        <label>Expires</label><select id="expiresY"></select>
+                        <select id="expiresM"></select><br>
+                    </div>
+                    <div id="ppInfo">
+                        <input type="text" id="ppEmail"/>
+                        <label>PayPal Email</label><br>
+                         <input type="text" id="ppPW"/>
+                         <label>PayPal Password</label><br>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" id="submitB"/>    
+                <input type="button" value="Reset" id="resetB"/>   
         </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
-    
 </body>
 </html>
