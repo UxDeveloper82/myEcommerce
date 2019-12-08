@@ -1,8 +1,9 @@
 var months = ["Jan", "Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
-var sArr = ["AK"];
-
-
+var sArr = ["AK","AL","AR","AS","AZ","CA","CO","CT","DC","DE","FL","GA","GU","HI","IA","ID","IL",
+           "IN","KS","KY","LA","MA","MD","ME","MH","MI","NM","MO","MS","MT","NC","ND","NE","NH","NJ",
+           "NM","NV","NY","OH","OK","OR","PA","PR","PW","RI","SC","SD","TN","TX","UT","VA","VI","VT",
+           "WA","WI","WV","WY"];
 
 function buildSelects() {
     for(var i in sArr) {
