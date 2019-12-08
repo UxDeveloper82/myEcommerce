@@ -59,7 +59,6 @@ class UI {
          const row = document.querySelector('.row-form');
          const form = document.querySelector('#form-area');
          row.insertBefore(div, form);
-         console.log(form);
          //vanish in 3 seconds
          setTimeout(() => document.querySelector('.alert').remove(),3000);
      }
