@@ -1,0 +1,19 @@
+[
+    {
+        "title" : "Ecommerce",
+        "details" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum",
+        "moredetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum"
+    },
+    {
+        "title": "Products",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum",
+        "moredetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum"
+    },
+    {
+        "title": "Brands",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum",
+        "moredetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum"
+    }
+]
+
+

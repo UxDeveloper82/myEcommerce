@@ -11,21 +11,21 @@
 	<script src="https://use.fontawesome.com/5f0fc0cc0f.js"></script>
 </head>
 <body>
-   <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll active" href="index.html">Ux/Design</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-					<li>
+  
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">UxDesign</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
                         <a class="page-scroll" href="game.html">Game Page</a>
                     </li>
                     <li>
@@ -37,21 +37,10 @@
                     <li>
                         <a class="page-scroll" href="#main-gallery">Categories</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="contact.html">Contact</a>
-					</li>
-					<form class="navbar-form navbar-right">
-							<div class="form-group">
-							  <input type="text" class="form-control" placeholder="Search">
-							</div>
-							<button type="submit" class="btn btn-default">Submit</button>
-					</form>	
-				</ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-	</nav>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     <div class="banner">
 			<img src="images/banner.jpg" alt="">  
 			<div class="banner-container">         
@@ -236,24 +225,7 @@
 							<hr>
 	                    </div>
 	            </div> 
-	            <div class="row main-box">
-					    <div class="col-sm-4 box">
-	                        <h2>Ecommerce</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum</p>
-						    <button id="handle" class="btn btn-primary">More Info <span> + </span></button>
-							<p id="second-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cum facere incidunt ipsum sint inventore consequatur......</p>
-						</div>
-	                    <div class="col-sm-4 box">
-	                        <h2>Products</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum</p>
-						    <a href="#" class="btn btn-primary">More Info</a>
-						</div>
-						<div class="col-sm-4 box">
-							<h2 id="logo">Brands</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum</p>
-						    <a href="#" class="btn btn-primary">More Info</a>
-						</div>
-	            </div>   
+	            <div id="main-box" class="row main-box"></div>   
 	    </div>
 	</section>
 	<section id="select">

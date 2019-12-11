@@ -150,6 +150,10 @@ section{
   border:1px solid #222222;
   background: #f2f2f3;
 }
+#second-text {
+  display: none;
+}
+
 
 /*===============
   Selector
