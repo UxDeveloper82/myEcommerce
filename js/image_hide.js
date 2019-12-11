@@ -52,7 +52,6 @@ class UI {
 document.addEventListener('DOMContentLoaded', UI.displayProducts);
 
 
-document.querySelector('#more').addEventListener('click', init);
 
 // $(document).ready(function() {
 //    $("#second-text").hide();
