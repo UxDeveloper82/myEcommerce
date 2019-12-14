@@ -33,6 +33,13 @@ class UI {
        myMessages.forEach((mymessage) => UI.addMessageToList(mymessage));
    }
  
+
+
+
+
+
+
+   
     static addMessageToList(mymessage) {
         const list = document.querySelector('#message-list')
         const row = document.createElement('tr');
