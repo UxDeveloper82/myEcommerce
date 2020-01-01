@@ -57,6 +57,16 @@ section{
   font-size: 22px;
   border-radius:5px;
 }
+#outbox{
+  width: 400px;
+  text-align: center;
+}
+
+#date {
+  font-weight: 300;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 /*------------------
   Slideshow-area
