@@ -16,11 +16,6 @@ img{
   max-height:660px;
 }
 
-h3{
-    border-radius:10px;
-	border: 1px solid red;
-	background:red;
-}
 section{
 	padding:100px 0;
 }
@@ -111,6 +106,13 @@ section{
   border:1px solid #222222;
 }
 
+#deals h2{
+  width: 20%;
+  color: white;
+  border-radius:10px;
+	border: 1px solid red;
+	background:red;
+}
 
 #deals .modal img {
   width:150px;
