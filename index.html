@@ -49,9 +49,9 @@
 			<div class="banner-container">         
 					<h2 class="inner-heading">Welcome To My Store</h2>
 					<p class="sub-heading">New Computers For Sale</p>
-					<a href="contact.html" class="btn btn-primary">More Info</a>
+					<a href="contact.html" class="btn btn-danger">Shop Now</a>
 					<div id="outbox">
-					    <div id="date">12-12-12</div>
+					    <div id="date"></div>
 					</div>
 		    </div>
 	</div>
@@ -87,25 +87,7 @@
 						</div>	
 					</div>		
 				</div>
-				<script>
-				var myIndex = 0;
-				carousel();
-				
-				function carousel(){
-					var i;
-					var x= document.getElementsByClassName("slideshow");
-					for(var i= 0; i<x.length; i++){
-					x[i].style.display ="none"
-					}
-					myIndex++;
-					if(myIndex > x.length){myIndex = 1}
-					x[myIndex-1].style.display="block";
-					setTimeout(carousel, 3000);
-				
-				}
-
-				</script>
-				<!--Ecommerce_content-->
+		
 	</section>
 	<section id="deals">
         <div class="container">
@@ -401,5 +383,6 @@
 <script src="js/tellTime.js"></script>
 <script src="js/selectors.js"></script>
 <script src="js/image_hide.js" async></script>
+<script src="js/carousel.js"></script>
 </body>
 </html>
