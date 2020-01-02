@@ -138,7 +138,7 @@
                             <div class="title">Electronics</div>
                             <button data-close-button class="close-button">&times;</button>
 						</div>
-						<img id="image-modal" src="images/1.png" class="img-responsive">
+						<img id="image-modal" src="images/3.jpg" class="img-responsive">
                         <div class="modal-body">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 						</div>
@@ -154,7 +154,7 @@
                             <div class="title">Electronics</div>
                             <button data-close-button class="close-button">&times;</button>
 						</div>
-						<img id="image-modal" src="images/1.png" class="img-responsive">
+						<img id="image-modal" src="images/4.jpg" class="img-responsive">
                         <div class="modal-body">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 						</div>
@@ -163,37 +163,6 @@
 				</div>
 			 </div>
 		</div>
-        <script>
-		 const openModalButtons = document.querySelectorAll("[data-modal-target]");
-		 const closeModalButtons = document.querySelectorAll("[data-close-button]");
-		 const overlay = document.getElementById("overlay");
-
-         openModalButtons.forEach(button => {
-            button.addEventListener('click', () => {
-				console.log(button);
-                const modal = document.querySelector(button.dataset.modalTarget);
-				openModal(modal);
-			});
-		 });
-
-		  closeModalButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const modal = button.closest('.modal');
-				closeModal(modal);
-			});
-		 });
-		 function openModal(modal) {
-			 if(modal == null) return 
-			 modal.classList.add('active');
-			 overlay.classList.add('active');
-		 } 
-		  function closeModal(modal) {
-			 if(modal == null) return 
-			 modal.classList.remove('active');
-			 overlay.classList.remove('active');
-		 } 
-	
-		</script>
 	</section>
 	<section id="Ecommerce_Content">
 	    <div class="container">
@@ -268,18 +237,66 @@
 					<div class="col-sm-3 inner-deals">
 						<img src="images/5.jpg" alt="">
 						<h3>Tech</h3>
+						<button data-modal-target="#modal" class="btn btn-danger more-details">More Details</button>
+						<div class="modal" id="modal" style="display:block">
+							<div class="modal-header">
+								<div class="title">Electronics</div>
+								<button data-close-button class="close-button">&times;</button>
+							</div>
+							<img id="image-modal" src="images/1.png" class="img-responsive">
+							<div class="modal-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							</div>
+						</div>
+						<div id="overlay"></div>
 					</div>
 					<div class="col-sm-3 inner-deals">
 						<img src="images/6.jpg" alt="">
 						<h3>Games</h3>
+						<button data-modal-target="#modal" class="btn btn-danger more-details">More Details</button>
+						<div class="modal" id="modal" style="display:block">
+							<div class="modal-header">
+								<div class="title">Electronics</div>
+								<button data-close-button class="close-button">&times;</button>
+							</div>
+							<img id="image-modal" src="images/1.png" class="img-responsive">
+							<div class="modal-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							</div>
+						</div>
+						<div id="overlay"></div>
 					</div>
 					<div class="col-sm-3 inner-deals">
 						<img src="images/7.jpg" alt="">
 						<h3>Electronics</h3>
+						<button data-modal-target="#modal" class="btn btn-danger more-details">More Details</button>
+						<div class="modal" id="modal" style="display:block">
+							<div class="modal-header">
+								<div class="title">Electronics</div>
+								<button data-close-button class="close-button">&times;</button>
+							</div>
+							<img id="image-modal" src="images/1.png" class="img-responsive">
+							<div class="modal-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							</div>
+						</div>
+						<div id="overlay"></div>
 					</div>
 					<div class="col-sm-3 inner-deals">
 						<img src="images/8.JPG" alt="">
 						<h3>Repair Kits</h3>
+						<button data-modal-target="#modal" class="btn btn-danger more-details">More Details</button>
+						<div class="modal" id="modal" style="display:block">
+							<div class="modal-header">
+								<div class="title">Electronics</div>
+								<button data-close-button class="close-button">&times;</button>
+							</div>
+							<img id="image-modal" src="images/1.png" class="img-responsive">
+							<div class="modal-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							</div>
+						</div>
+						<div id="overlay"></div>
 					</div>
 				 </div>
 			</div>
@@ -463,5 +480,6 @@
 <script src="js/selectors.js"></script>
 <script src="js/image_hide.js" async></script>
 <script src="js/carousel.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>
