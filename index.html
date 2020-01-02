@@ -98,12 +98,26 @@
 			</div>
 			<div class="row text-center">
                 <div class="col-sm-3 inner-deals">
-					<img src="images/1.png" alt="">
-					<h3>Tech</h3>
+					<img src="images/1.png">
+					<h3 class="text-center">Tech</h3>
+					<button data-modal-target="#modal" class="btn btn-danger more-details">More Details</button>
+					<div class="modal" id="modal" style="display:block">
+                        <div class="modal-header">
+                            <div class="title">Example Modal</div>
+                            <button data-close-button class="close-button">&times;</button>
+						</div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste distinctio recusandae 
+							quis dolorum dicta reiciendis possimus, repellat mollitia laboriosam ab architecto officiis 
+							iusto libero minus quasi assumenda, magnam corporis.
+						</div>
+					</div>
+				    <div id="overlay"></div>
 				</div>
 				<div class="col-sm-3 inner-deals">
 					<img src="images/2.png" alt="">
 					<h3>Games</h3>
+					<button class="btn btn-danger">Details</button>
 				</div>
 				<div class="col-sm-3 inner-deals">
 					<img src="images/3.jpg" alt="">
@@ -115,6 +129,37 @@
 				</div>
 			 </div>
 		</div>
+        <script>
+		 const openModalButtons = document.querySelectorAll("[data-modal-target]");
+		 const closeModalButtons = document.querySelectorAll("[data-close-button]");
+		 const overlay = document.getElementById("overlay");
+
+         openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+				console.log(button);
+                const modal = document.querySelector(button.dataset.modalTarget);
+				openModal(modal);
+			});
+		 });
+
+		  closeModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = button.closest('.modal');
+				closeModal(modal);
+			});
+		 });
+		 function openModal(modal) {
+			 if(modal == null) return 
+			 modal.classList.add('active');
+			 overlay.classList.add('active');
+		 } 
+		  function closeModal(modal) {
+			 if(modal == null) return 
+			 modal.classList.remove('active');
+			 overlay.classList.remove('active');
+		 } 
+	
+		</script>
 	</section>
 	<section id="Ecommerce_Content">
 	    <div class="container">

@@ -34,7 +34,7 @@ mainbox.innerHTML = `<div id="box" class="col-sm-4 box">
 <p style="display:none;" class ="second-text" id="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus nisl vel erat finibus condimentum. Sed a turpis ac massa luctus porta. Proin blandit, turpis interdum consequat dictum</p>
 </div>`;
 
-let acc = document.getElementsByClassName("btn-danger");
+let acc = document.getElementsByClassName("more");
 
 for(var i = 0 ; i < acc.length; i++) {
     acc[i].onclick = function () {
