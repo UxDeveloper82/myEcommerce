@@ -111,6 +111,16 @@ section{
   border:1px solid #222222;
 }
 
+
+#deals .modal img {
+  width:150px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
 .modal {
   position: fixed;
   top: 50%;
@@ -122,6 +132,7 @@ section{
   z-index: 10;
   background-color: white;
   width: 500px;
+  height: 250px;
   max-width: 80%;
 }
 .modal.active {
