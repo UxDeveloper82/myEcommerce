@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" rel="stylesheet" />
     <!-- Latest compiled and minified CSS -->
 	<script src="https://use.fontawesome.com/5f0fc0cc0f.js"></script>
 </head>
@@ -160,68 +163,146 @@
 		</div>
 	</section>
 
-	<section id="Ecommerce_Content">
-	    <div class="container">
-	        <div class="row">
-			    <div class="col-md-12">
-					    <!--side-bar-area-->
-						    <div class="col-md-4 col-sm-4">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item active">
-                                        Categories
-                                    </a>
-                                    <a href="#" class="list-group-item">Laptops<span class="badge">14</span></a>
-                                    <a href="#" class="list-group-item">Cameras</a>
-                                    <a href="#" class="list-group-item">Computers<span class="badge">2</span></a>
-                                    <a href="#" class="list-group-item">Iphones</a>
-                                </div> 
-								<div class="list-group">
-                                    <a href="#" class="list-group-item active">
-                                        Brands
-                                    </a>
-                                    <a href="#" class="list-group-item">Hp<span class="badge">11</span></a>
-                                    <a href="#" class="list-group-item">Dell</a>
-                                    <a href="#" class="list-group-item">Sony</a>
-                                    <a href="#" class="list-group-item">Toshiba</a>
-                                </div> 
-                            </div>
-						    <div class="col-md-8 col-sm-8">
-						        <div class="col-md-4 col-sm-4">
-									<img src="images/10.jpg" class="sc-item-img img-responsive"/>
-										<div class="text-center"><a href="#">Apple Laptop</a></div>
-									    <p class="text-center">$999.99</p>
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<img src="images/11.jpg" class="sc-item-img img-responsive"/>
-									<div class="text-center"><a href="#">apple Tablets</a></div>
-									<p class="text-center">$699.99</p>
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<img src="images/12.jpg" class="sc-item-img img-responsive"/>
-									<div class="text-center"><a href="#">Iphones</a></div>
-								    <p class="text-center">$599.99</p>
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<img src="images/13.jpg" class="sc-item-img img-responsive"/>
-									<div class="text-center"><a href="#">Apple Desktops</a></div>
-									<p class="text-center">$999.00</p>
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<img src="images/14.jpg" class="sc-item-img img-responsive"/>
-									<div class="text-center"><a href="#">Apple Watch</a></div>
-									<p class="text-center">$290.00</p>
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<img src="images/15.jpg" class="sc-item-img img-responsive"/>
-									<div class="text-center"><a href="#">Apple Credit Machine</a></div>
-									<p class="text-center">$290.00</p>
-								</div>
-							</div>
-							<!--col-md-8--> 
-						</div>
-				</div>
-			</div>
-	</Section>
+     <!--  ======================= Project Area =============================  -->
+
+    <section class="project-area">
+        <div class="container">
+            <div class="project-title pb-5">
+                <h1 class="text-uppercase title-h1">Check By Categories</h1>
+                <h1 class="text-uppercase title-h1">Best Quality Products</h1>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                <button type="button" data-filter=".popular">Popular</button>
+                <button type="button" data-filter=".latest">Latest</button>
+                <button type="button" data-filter=".following">Following</button>
+                <button type="button" data-filter=".upcoming">Upcoming</button>
+            </div>
+
+            <div class="row grid">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="images/10.jpg">
+                                <img src="images/10.jpg" class="sc-item-img img-fluid"/>
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Apple Laptop</h4>
+                            <span class="text-secondary">$999.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="images/11.jpg">
+                                <img src="images/11.jpg" class="sc-item-img img-fluid"/>
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">apple Tablets</h4>
+                            <span class="text-secondary">$699.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="images/12.jpg">
+                                <img src="images/12.jpg" alt="portfolio-3" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Iphone</h4>
+                            <span class="text-secondary">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="images/13.jpg">
+                                <img src="images/13.jpg" alt="portfolio-4" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Apple Desktops</h4>
+                            <span class="text-secondary">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="images/14.jpg">
+                                <img src="images/14.jpg" alt="portfolio-5" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Apple Watch</h4>
+                            <span class="text-secondary">$299.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="images/15.jpg">
+                                <img src="images/15.jpg" alt="portfolio-6" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Apple Credit Machine</h4>
+                            <span class="text-secondary">$290.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="images/16.jpg">
+                                <img src="images/16.jpg" alt="portfolio-7" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">drones</h4>
+                            <span class="text-secondary">$699.12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="images/12.jpg">
+                                <img src="images/12.jpg" alt="portfolio-8" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">X-PHones</h4>
+                            <span class="text-secondary">$999.12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="images/13.jpg">
+                                <img src="images/13.jpg" alt="portfolio-9" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Desktops</h4>
+                            <span class="text-secondary">$899.12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ======================= End Project Area =============================  -->
 	<section id="deals">
 			<div class="container">
 				<div class="row">
@@ -474,9 +555,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="js/tellTime.js"></script>
+	<script src="js/main.js"></script>
 	<script src="js/selectors.js"></script>
 	<script src="js/image_hide.js" async></script>
 	<script src="js/carousel.js"></script>
 	<script src="js/modal.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 </body>
 </html>
