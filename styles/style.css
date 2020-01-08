@@ -23,45 +23,98 @@ section{
 	width:80%;
 	margin:0 auto;
 }
-/*==============
-  Banner-Area
-===============*/
-.banner{
-  position:relative;
-  z-index:1000;
-}
-.banner-container{
-  width:100%;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translateX(-50%) translateY(-50%);
-  color:#fff;
-  text-align:center;
-}
-.banner-container .inner-heading{
-   font-weight: 700; 
-   font-size:450%;
-}
-.banner-container .sub-heading{
-  font-weight:400;
-  font-size:250%;
-}
-.banner-container .btn{
-  margin-top:40px;
-  font-size: 22px;
-  border-radius:5px;
-}
-#outbox{
-  width: 400px;
-  text-align: center;
+
+/* start navigation */
+
+.navbar .navbar-brand {
+  padding: 0 2rem 0 5rem;
 }
 
-#date {
-  font-weight: 300;
-  font-size: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
+.main-menu .navbar {
+  padding: 1rem 20rem;
 }
+
+.nav-item .nav-link {
+  font: normal 500 15px/2px var(--roboto);
+  text-transform: uppercase;
+  padding: 1.7rem;
+  color: var(--title-color);
+}
+
+.navbar-nav .active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+/* end navigation */
+
+/* Banner Area */
+
+.site-main .site-banner {
+  background: url('/images/banner.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+  .site-main .site-banner .site-title h3 {
+      font-weight: 500;
+  }
+
+      .site-main .site-banner .site-title h3::after {
+          content: " ";
+          height: 2px;
+          color: white;
+          display: inline-block;
+          margin-left: 5%;
+          transform: translateY(-10px);
+      }
+
+  .site-main .site-banner .site-title h1 {
+      color: white;
+      font-weight: bold;
+      
+  }
+
+  .site-main .site-banner .site-title h3 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    
+}
+
+  .site-main .site-banner .site-title h4 {
+      font-size: 1.5rem;
+  }
+
+  .site-main .site-banner .banner-image > img {
+      padding: 7rem 0;
+      width: 90rem;
+  }
+  #outbox{
+    width: 400px;
+    text-align: center;
+  }
+  
+  #date {
+    font-weight: 300;
+    font-size: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+
+/* End Banner Area */
+
 
 /*------------------
   Slideshow-area
