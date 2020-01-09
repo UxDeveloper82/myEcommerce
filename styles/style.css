@@ -264,6 +264,40 @@ section{
 	width:80%;
 	margin:0 auto;
 }
+
+/*===============
+  Thumbnail-Area
+=================*/
+#thumbnail {
+   margin: 20px;
+   padding: 0;
+}
+
+#thumbnail .container {
+    max-width: 760px;
+    margin: auto;
+    border:#fff solid 3px;
+    background: #fff;
+}
+
+#thumbnail .container .main-img img,
+.imgs img {
+   width:100%;
+   border:#333 solid 1px;
+
+}
+ .imgs{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:1px;
+}
+
+
+
+
+
+
+
 /*===============
   Deals-Area
 =================*/
