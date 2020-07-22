@@ -1,5 +1,4 @@
-﻿$(document).ready(function() {
-﻿//back to top
+﻿﻿//back to top
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
         backToTop = function () {
@@ -23,4 +22,3 @@ if ($('#back-to-top').length) {
 }
 
 
-});
